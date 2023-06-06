@@ -96,7 +96,7 @@ def check_for_updates(current_version):
             print(icon + bcyan + "Skipping update." + nc)
     else:
         print(icon + bcyan + "You have the most recent version!" + nc)
-current_version = '1.0.0'      
+current_version = '1.5.0'      
 def start():
       print(icon + bcyan + "Validating libraries..." + nc)
       time.sleep(2.5)
