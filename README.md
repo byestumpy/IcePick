@@ -48,6 +48,3 @@
 ## Credits:
 README format from [KasRoudra](https://github.com/KasRoudra/PyPhisher/blob/main/README.md)
 
-## Find Me on :
-
-- [![Telegram](https://img.shields.io/badge/Telegram-KasRoudra-indigo?style=for-the-badge&logo=telegram)](https://t.me/byestumpy)
