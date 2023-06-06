@@ -23,7 +23,7 @@ white="\033[0;37m"
 nc="\033[00m"
 
 icon = yellow + "[" + nc + nc + "+" + nc + yellow + "] " + nc
-
+current_version = '1.0.0'  
 
 
 def header():
@@ -39,7 +39,7 @@ def header():
  ▒ ░░           ░   ░░        ▒ ░░        ░ ░░ ░ 
  ░  ░ ░         ░  ░          ░  ░ ░      ░  ░    
     ░                            ░                
-                  Version 1.5.0                                                                                                                               
+                  Version 1.0.0                                                                                                                               
     """, 1)))
     
 def socials():
@@ -80,9 +80,9 @@ def check_for_updates(current_version):
     if version.parse(current_version) < version.parse(latest_version):
         print(green + "An update is available!" + nc)
         print(green + f"Current version: {current_version}, Latest version: {latest_version}" + nc)
-        print(green + "Update to the latest version here: " + nc + bcyan + "https://github.com/byestumpy/IcePick/blob/main/update.txt" + nc)
-
+        
         answer = input(cyan + "Would you like to update now? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
+        
         while answer.lower() not in ("y", "n"):
             print("Please enter a valid option.")
             answer = input(cyan + "Would you like to update now? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
@@ -96,7 +96,7 @@ def check_for_updates(current_version):
             print(icon + bcyan + "Skipping update." + nc)
     else:
         print(icon + bcyan + "You have the most recent version!" + nc)
-current_version = '1.5.0'      
+    
 def start():
       print(icon + bcyan + "Validating libraries..." + nc)
       time.sleep(2.5)
@@ -109,13 +109,7 @@ def start():
       time.sleep(0.5)
       # os.system('cls')
       main()
-      
 
-
-
-
-
-      
 answer = input(cyan + "Start IcePick? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
 while answer.lower() not in ("y", "n"):
     print("Please enter a valid option.")
