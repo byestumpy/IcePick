@@ -6,7 +6,7 @@ from def_core import *
 from packaging import version
 from pystyle import Anime, Write, Colorate, Colors, Box, Center
 
-current_version = '1.0.0'  
+current_version = '1.1.0'  
 
 def header():
     print(Center.XCenter(Colorate.Vertical(Colors.blue_to_white, """
