@@ -6,7 +6,7 @@ from def_core import *
 from packaging import version
 from pystyle import Anime, Write, Colorate, Colors, Box, Center
 
-current_version = '1.1.0'  
+current_version = '1.5.0'  
 
 def header():
     print(Center.XCenter(Colorate.Vertical(Colors.blue_to_white, """
@@ -89,7 +89,14 @@ def start():
     
     for message, sleep_time in steps:
         print(icon + bcyan + message + nc)
+        if message == "Checking for updates...":
+            check_for_updates(current_version)
         time.sleep(sleep_time)
+    
+    os.system('cls')
+    header()
+    socials()
+    choose_option()
     
     os.system('cls')
     header()
