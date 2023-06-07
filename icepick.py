@@ -2,29 +2,11 @@ import sys
 import time
 import os
 import requests
+from def_core import *
 from packaging import version
 from pystyle import Anime, Write, Colorate, Colors, Box, Center
 
-
-black="\033[0;30m"
-red="\033[0;31m"
-bred="\033[1;31m"
-green="\033[0;32m"
-bgreen="\033[1;32m"
-yellow="\033[0;33m"
-byellow="\033[1;33m"
-blue="\033[0;34m"
-bblue="\033[1;34m"
-purple="\033[0;35m"
-bpurple="\033[1;35m"
-cyan="\033[0;36m"
-bcyan="\033[1;36m"
-white="\033[0;37m"
-nc="\033[00m"
-
-icon = yellow + "[" + nc + nc + "+" + nc + yellow + "] " + nc
 current_version = '1.0.0'  
-
 
 def header():
     print(Center.XCenter(Colorate.Vertical(Colors.blue_to_white, """
@@ -53,8 +35,6 @@ themysteryinc.net
 header()
 socials()
 
-def main():
-      print("Hello")
       
 def perform_update():
     update_url = "https://github.com/byestumpy/IcePick/raw/main/icepick.py"
@@ -81,35 +61,42 @@ def check_for_updates(current_version):
         print(green + "An update is available!" + nc)
         print(green + f"Current version: {current_version}, Latest version: {latest_version}" + nc)
         
-        answer = input(cyan + "Would you like to update now? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
-        
-        while answer.lower() not in ("y", "n"):
-            print("Please enter a valid option.")
-            answer = input(cyan + "Would you like to update now? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
-        if answer.lower() == "y":
-            perform_update()
-            print(icon + bcyan + "Updating..." + nc)
-            time.sleep(2.5)
-            print(icon + bcyan + "Update successful. Please restart the script." + nc)
-            sys.exit()
-        elif answer.lower() == "n":
-            print(icon + bcyan + "Skipping update." + nc)
+        while True:
+            answer = input(cyan + "Would you like to update now? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc).lower()
+            
+            if answer == "y":
+                perform_update()
+                print(icon + green + "Updating..." + nc)
+                time.sleep(2.5)
+                print(icon + green + "Update successful. Please restart the script." + nc)
+                sys.exit()
+            elif answer == "n":
+                print(icon + green + "Skipping update." + nc)
+                break
+            else:
+                print("Please enter a valid option.")
     else:
         print(icon + bcyan + "You have the most recent version!" + nc)
+
     
 def start():
-      print(icon + bcyan + "Validating libraries..." + nc)
-      time.sleep(2.5)
-      print(icon + bcyan + "Checking for updates..." + nc)
-      check_for_updates(current_version)
-      time.sleep(3.0)
-      print(icon + bcyan + "Waking up the eskimos..." + nc)
-      time.sleep(0.5)
-      print(icon + bcyan + "Starting IcePick..." + nc)
-      time.sleep(0.5)
-      # os.system('cls')
-      main()
+    steps = [
+        ("Validating libraries...", 2.5),
+        ("Checking for updates...", 3.0),
+        ("Waking up the eskimos...", 0.5),
+        ("Starting IcePick...", 0.5)
+    ]
+    
+    for message, sleep_time in steps:
+        print(icon + bcyan + message + nc)
+        time.sleep(sleep_time)
+    
+    os.system('cls')
+    header()
+    socials()
+    choose_option()
 
+      
 answer = input(cyan + "Start IcePick? " + nc + yellow + "[" + nc + white + "y/n" + nc + yellow + "] " + nc)
 while answer.lower() not in ("y", "n"):
     print("Please enter a valid option.")
