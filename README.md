@@ -29,7 +29,7 @@
  - Easy to use
 
 
-#### Check out my most popular projects:
+#### Check out my other projects:
  - [DiscordGPT](https://github.com/byestumpy/DiscordGPT) - A Discord based ChatGPT (Without censorship)
 
  
