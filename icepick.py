@@ -3,7 +3,7 @@ import sys
 import time
 import requests
 from colors import *
-from icepick_opt import *
+from misc_funcs import *
 from packaging import version
 from def_core_icepick import IcePick
 from pystyle import Colorate, Colors, Box, Center
