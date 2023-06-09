@@ -5,7 +5,7 @@ import ping3
 import argparse
 import textwrap
 from colors import *
-from icepick_opt import scan
+from misc_funcs import scan
 from discord_webhook import DiscordWebhook
 
 
