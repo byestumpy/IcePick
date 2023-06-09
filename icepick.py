@@ -1,11 +1,11 @@
-from colors import *
 import os
 import sys
 import time
 import requests
+from colors import *
 from icepick_opt import *
-from def_core_icepick import IcePick
 from packaging import version
+from def_core_icepick import IcePick
 from pystyle import Colorate, Colors, Box, Center
 
 current_version = '1.0.0'
@@ -155,8 +155,8 @@ def check_for_updates(current_version):
 
 def start():
     steps = [
-        ("Validating libraries...", 2.5),
-        ("Checking for updates...", 3.0),
+        ("Validating files...", 2.5),
+        ("Checking for updates...", 2),
         ("Waking up the eskimos...", 0.5),
         ("Starting IcePick...", 0.5)
     ]
@@ -166,7 +166,8 @@ def start():
         if message == "Checking for updates...":
             check_for_updates(current_version)
         time.sleep(sleep_time)
-
+    if not os.path.exists("filegen"):
+        os.makedirs("filegen")
     os.system('cls')
     header()
     socials()
