@@ -213,11 +213,11 @@ while True:
             parser.add_argument("-L", "--location", action="store_true", help="Print the location of the logger.py file.", required=False)
             parsed_args = parser.parse_args(args.split())
 
-            if not parsed_args.webhook and not parsed_args.locate:
+            if not parsed_args.webhook and not parsed_args.location:
                 print(bred + "Please provide a valid argument. \nUse the following for more information: " + nc + byellow + "dislogger --help" + nc)
                 return
 
-            if parsed_args.locate:
+            if parsed_args.location:
                 logger_file = os.path.abspath("filegen/logger.py")
                 if os.path.exists(logger_file):
                     print(bcyan + "Location: " + nc + byellow + logger_file + nc)
