@@ -1,6 +1,17 @@
+import os
 import socket
 import requests
 from colors import *
+
+
+
+def clear():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+
 
 def port_scanner(host, port):
     try:
