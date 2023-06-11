@@ -168,7 +168,7 @@ def start():
         time.sleep(sleep_time)
     if not os.path.exists("filegen"):
         os.makedirs("filegen")
-    os.system('cls')
+    clear()
     header()
     socials()
     choose_option()
