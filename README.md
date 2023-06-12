@@ -73,5 +73,5 @@
 ### This repository is open source to help others. So if you wish to copy, consider giving credit!
 
 ## Credits:
-README format from [KasRoudra](https://github.com/KasRoudra/PyPhisher/blob/main/README.md)
+None. I did this all myself mf. - Stumpy
 
