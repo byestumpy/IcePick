@@ -29,26 +29,26 @@
     ```
     pkg install git python3  -y
     ```
+##### Install IcePick
+ -  Clone this repository
+    ```
+    git clone https://github.com/byestumpy/IcePick.git
+    ```
 
-##### Clone this repository
-```
-git clone https://github.com/byestumpy/IcePick.git
-```
+ - Enter the directory
+    ```
+    cd IcePick
+    ```
 
-##### Enter the directory
-```
-cd IcePick
-```
+ -  Install all modules
+    ```
+    pip install -r requirements.txt
+    ```
 
-##### Install all modules
-```
-pip install -r requirements.txt
-```
-
-##### Run the tool
-```
-python icepick.py
-```
+ -  Run the tool
+    ```
+    python icepick.py
+    ```
 
 ### Features:
 
