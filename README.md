@@ -1,8 +1,22 @@
-# IcePick
+<p align="center">
+  <img src="https://i.imgur.com/uYKRyvz.png">
+</p>
 
-### Description:
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Termux-blue?style=for-the-badge">
+</p>
 
-***An all-in-one Python-based hacking Swiss Army knife.***
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-Stumpy-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge">
+</a>
+</p>
+
+<p align="center"><b>An all-in-one Python-based hacking Swiss Army knife.</b></p>
+
+##
+
 
 ### Installation
 
