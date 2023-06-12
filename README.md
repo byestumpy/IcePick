@@ -22,25 +22,38 @@
 
 ##### Install dependencies (git, python)
  - For Debian
-    - ```sudo apt install git python3 -y```
+    ```
+    sudo apt install git python3 -y
+    ```
  - For Termux
-    - ```pkg install git python3  -y```
+    ```
+    pkg install git python3  -y
+    ```
 
 ##### Clone this repository
- - ```git clone https://github.com/byestumpy/IcePick.git```
+```
+git clone https://github.com/byestumpy/IcePick.git
+```
 
 ##### Enter the directory
- - ```cd IcePick```
+```
+cd IcePick
+```
 
 ##### Install all modules
- - ```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ##### Run the tool
- - ```python icepick.py```
+```
+python icepick.py
+```
 
 ### Features:
 
- - Easy to use
+ - Discord Keylogger
+ - ReverseShell Script
 
 
 #### Check out my other projects:
