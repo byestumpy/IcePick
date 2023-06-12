@@ -17,6 +17,16 @@
 
 ##
 
+### Features:
+
+ - Discord Keylogger
+ - ReverseShell Script
+
+#### Tested on
+ - `Termux`
+ - `Ubuntu`
+ - `Kali-Linux`
+ - `Windows 10/11`
 
 ### Installation
 
@@ -50,22 +60,10 @@
     python icepick.py
     ```
 
-### Features:
-
- - Discord Keylogger
- - ReverseShell Script
 
 
 #### Check out my other projects:
  - [DiscordGPT](https://github.com/byestumpy/DiscordGPT) - A Discord based ChatGPT (Without censorship)
-
- 
-
-#### Tested on
- - `Termux`
- - `Ubuntu`
- - `Kali-Linux`
- - `Windows 10/11`
 
 ## Disclaimer
 ***This tool is developed for educational purposes. You have your own responsibilities and you are liable to any damage or violation of laws by this tool. The author is not responsible for any misuse of IcePick!***
